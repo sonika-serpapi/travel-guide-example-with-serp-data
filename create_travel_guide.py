@@ -98,17 +98,17 @@ def get_travel_results():
         for restaraunt in restaurant_results:
             f.write(f"### {restaraunt["title"]}\n")
             f.write(f"![{restaraunt["title"]}]({restaraunt["thumbnail"]})\n\n")
-            f.write(f"Cuisine: {restaraunt["type"]}\n")
-            f.write(f"Rating: {restaraunt["rating"]}/5\n")
-            f.write(f"Address: {restaraunt["address"]}\n")
+            f.write(f"#### Cuisine: {restaraunt["type"]}\n")
+            f.write(f"#### Rating: {restaraunt["rating"]}/5\n")
+            f.write(f"#### Address: {restaraunt["address"]}\n")
         
         f.write("## Top Hotels\n")
         for hotel in hotel_results:
             f.write(f"### {hotel["name"]}\n")
             f.write(f"![{hotel["name"]}]({hotel["thumbnail"]})\n\n")
-            f.write(f"Link: {hotel["link"]}\n")
-            f.write(f"Rate per night: {hotel["rate_per_night"]}\n")
-            f.write(f"Rating: {hotel["rating"]}/5\n")
+            f.write(f"#### Link: {hotel["link"]}\n")
+            f.write(f"#### Rate per night: {hotel["rate_per_night"]}\n")
+            f.write(f"#### Rating: {hotel["rating"]}/5\n")
 
         print("Travel Guide Created Successfully!")
     return
